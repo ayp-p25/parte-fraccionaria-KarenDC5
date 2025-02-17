@@ -1,15 +1,24 @@
 """
-Inserta el encabezado aquí y escribe tu código abajo
+Determinar si un número dado tiene parte fraccionaria (decimales)
+Karen Durán, 757136 e Ingeniería Civil
+Algoritmos y Programación 
+ESI232B2
+07/02/25
+10 minutos 
 """
 
-# Declaraciones
-CONSTANTE = valor
-
 # Entradas
-entrada = input()
+numero = float(input("Introduzca un número: "))
+PARTE_FRACCIONARIA = numero % 1
 
 # Proceso
-
+if PARTE_FRACCIONARIA != 0:
+    decimales = True 
+else: 
+    decimales = False 
 
 # Salidas
-print(salida)
+if decimales: 
+    print("Sí tiene decimales")
+else: 
+    print("No tiene decimales")
